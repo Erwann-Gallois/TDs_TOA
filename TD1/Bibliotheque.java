@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.Iterator;
 
-public class Bibliotheque extends BibliothequeAbstraite implements Iterable<Livre>
+public class Bibliotheque extends BibliothequeAbstraite
 {
     public String nom;
     private List<Livre> livre_tableau;
