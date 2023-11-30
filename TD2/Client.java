@@ -1,6 +1,6 @@
 package TD2;
 
-public class Client 
+public class Client implements Comparable<Client>
 {
     String nom;
     String prenom;
@@ -28,5 +28,16 @@ public class Client
     public void afficher ()
     {
         System.out.println(this.nom + " " + this.prenom);
+    }
+
+    @Override
+    public int compareTo (Client c)
+    {
+        int res = this.nom.compareTo(c.nom);
+        if (res == 0)
+        {
+            res = this.prenom.compareTo(c.prenom);
+        }
+        return res;
     }
 }

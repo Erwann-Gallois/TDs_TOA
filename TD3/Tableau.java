@@ -2,6 +2,7 @@ package TD3;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Stack;
 import java.util.function.Predicate;
 
 public class Tableau {
@@ -68,4 +69,5 @@ public class Tableau {
             return s.length()%2 != 0;
         }
     }
+    Stack<Integer> stack = new Stack<Integer>();
 }
